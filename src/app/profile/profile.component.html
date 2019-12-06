@@ -2,5 +2,72 @@
 <link href="https://fonts.googleapis.com/css?family=Pacifico|Yeon+Sung&display=swap" rel="stylesheet">
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 <div class="container-fluid">
-    
+    <h1>GITHUB SEARCH</h1>
+    <form action="" class="enter">
+        <div class="form-group">
+            <input type="text" placeholder="enter username here...." class="form-control"  [(ngModel)]="username" name="username" (keyup)="findProfile()">
+        
+        </div>
+    </form>
+    <div *ngIf="profile">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="img" src="{{profile.avatar_url}}">
+                </div>
+                <br>
+                <br>
+                <div class="col-sm-3">
+                    <ul class="list-group">
+                        <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+                        <li class="list-group-item" *ngIf="profile.blog"><a href="{{profile.blog}}" target="_blank">{{profile.blog}}"</a></li>
+                        <li class="list-group-item" *ngIf="profile.hireable">Available for hire</li>
+                        <li class="list-group-item" *ngIf="profile.email"><a href="emailto:{{profile.email}}" {{profile.email}}></a></li>
+                     </ul>
+                </div>
+
+                <div class="col-sm-6">
+                    <div>
+                        <hr>
+                        <p>
+                            <span class="label"> {{profile.followers}} Followers</span>
+
+                            <span class="label"> {{profile.following}} Following </span>
+
+                            <span class="label"> {{profile.public_gists}} gists</span>
+
+                            <span class="label"> {{profile.public_repos}} Repositories</span>
+                        </p>
+                        <hr>
+                        <hr>
+                            <p>
+                                <a href="{{profile.html_url}}" target="_blank" class=" view  btn btn-dark">Explore profile on github.com </a>
+                               
+                            </p>
+                            <hr>
+                                <div class="row">
+                            <div class="col-md-12">
+                                <div class=" col-sm-10card-columns">
+                                    <div class="card" *ngFor="let repo of repo">
+                                        <div class="card">
+                                             <a href="{{repos.html_url}}" class="text-align-center" target="_blank"
+                                             class="btn btn-info">View this project on github</a>
+                                            <br>
+                                            <br>
+
+                                            <div class=" text-center">
+                                                <h2 id="rname">{{repo.name}}</h2>
+                                            </div>
+                                            <div class="card-body">
+                                                <p id="dec">
+                                                    {{repo.description}}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
