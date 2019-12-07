@@ -20,7 +20,7 @@
                     <ul class="list-group">
                         <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
                         <li class="list-group-item" *ngIf="profile.blog">{{profile.blog}}</li>
-                        <li class="list-group-item" *ngIf="profile.hireable">Available for hire</li>
+                        <li class="list-group-item" *ngIf="profile.hireable">{{profile.hireable}}</li>
                         <li class="list-group-item" *ngIf="profile.email">{{profile.email}}</li>
                      </ul>
                 </div>
@@ -31,7 +31,7 @@
                         <p>
                             <span class="label" class="btn btn-success"> {{profile.followers}} Followers</span>&nbsp;
 
-                            <span class="label" class="btn btn-danger"> {{profile.following}} Following </span>&nbsp;
+                            <span class="label" class="btn btn-info"> {{profile.following}} Following </span>&nbsp;
 
                             <span class="label" class="btn btn-secondary"> {{profile.public_gists}} gists</span>&nbsp;
 
@@ -40,7 +40,7 @@
                         <hr>
                         <hr>
                             <p>
-                                <a href="{{profile.html_url}}" target="_blank" class=" view  btn btn-dark">Explore profile on github.com </a>
+                                <a href="{{profile.html_url}}" target="_blank" class=" view  btn btn-warning">Explore profile on github.com </a>
                                
                             </p>
                             <hr>
