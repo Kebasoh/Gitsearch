@@ -1,5 +1,6 @@
 # Project name
 
+- Github Search application
 
 ## Screen--shot
 
@@ -10,7 +11,8 @@
 
 
 ## Author
--
+
+- Kebaso Steve Ongati
 
 ## Setup instructions
 - You can fork the application from github
@@ -28,9 +30,10 @@
 - Bootstrap
 - javascript
 - Angular
+## Contacts
 
 ## License
-[MIT] Copyright(BakersWebsite)<br>
+[MIT] Copyright(Gitsearch)<br>
 MT:  https://rem.mit-license.org<br>
 
 
