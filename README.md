@@ -1,27 +1,38 @@
-# Gitsearch
+# Project name
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
-## Development server
+## Screen--shot
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Description
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Author
+-
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Setup instructions
+- You can fork the application from github
+- Open your terminal in your PC and type in the search button and search for terminal
+- Double click terminal to open it. Type pwd to see the point you are in your Pc.
+- Feed in the command sudo apt-get update. Then key in sudo apt BakersWebsite.
+- Clone or download the project from git hub 
 
-## Running end-to-end tests
+## BDD
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Technologies Used
+- HTML
+- CSS
+- Bootstrap
+- javascript
+- Angular
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## License
+[MIT] Copyright(BakersWebsite)<br>
+MT:  https://rem.mit-license.org<br>
+
+
+
+
