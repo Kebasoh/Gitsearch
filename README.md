@@ -27,6 +27,10 @@
  3. At the landing page you can also see the number of followers you have and the people you are following.
 
 
+## Known Bugs
+
+- I got some bugs during my project development process but i managed to solve them.
+
 ## Development
 
 - To fix a bug or enhance an existing module, follow these steps:
