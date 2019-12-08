@@ -26,7 +26,7 @@
 
  3. At the landing page you can also see the number of followers you have and the people you are following.
 
- 
+
 ## Development
 
 - To fix a bug or enhance an existing module, follow these steps:
@@ -75,6 +75,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Contacts
 
+Number:0797657305/0795663799
+Email:ongatikebaso@gmail.com
 
 ## license
 [MIT License](https://kebasoh.github.io/Gitsearch/blob/master/LICENSE) [kebasoh](https://github.com/kebasoh). 
