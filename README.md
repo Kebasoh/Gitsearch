@@ -1,9 +1,10 @@
 ## Project Name
 - Github  search
 ## Author
-- 
+- Kebaso Steve Ongati
 ## Description
-- 
+
+- The website basically works in a way that you can search you Github account and get to explore and get to view your account in Github. 
 
 ## Technologies Used
 - This project was generated with Angular CLI version 7.1.4.
