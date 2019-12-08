@@ -6,7 +6,7 @@
     <form action="" class="enter">
         <div class="form-group">
             <input type="text" placeholder="enter username here...." class="form-control"  [(ngModel)]="username" name="username" (keyup)="findProfile()">
-             <button (click)="getProfileInfo()">SEARCH</button>
+        
         </div>
     </form>
     <div *ngIf="profile">
@@ -44,6 +44,30 @@
                                
                             </p>
                             <hr>
+                                       <h1>Repositories.</h1>
+                                <div class="row">
+                            <div class="col-md-12">
+                                <div class=" col-sm-10card-columns">
+                                    <div class="card" *ngFor="let repos of repos">
+                                        <div class="card">
+                                             <a href="{{repos.html_url}}" class="text-align-center" target="_blank"
+                                                class="view btn btn-outline-success">View this project on github</a>
+                                            <br>
+                                            <br>
+
+                                            <div class=" text-center">
+                                                <h2 id="rname">{{repos.name}}</h2>
+                                            </div>
+                                            <div class="card-body">
+                                                <p id="dec">
+                                                    {{repos.description}}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                              
                     </div>
                 </div>

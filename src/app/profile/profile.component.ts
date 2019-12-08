@@ -18,7 +18,10 @@ constructor(private profileService:ProfileService){
     this.profile = profile;
   });
 
- 
+  this.profileService.getProfileRepos().subscribe(repos => {
+    console.log(repos);
+    this.repos = repos;
+  });
 }
  
 findProfile(){
@@ -28,11 +31,16 @@ findProfile(){
     this.profile = profile;
   });
 
+  this.profileService.getProfileRepos().subscribe(repos => {
+    console.log(repos);
+    this.repos = repos;
+  })
 }
   ngOnInit() {
     
     this.profileService.updateProfile('kebasoh');
     this.profileService.getProfileInfo().subscribe(profile => this.profile = profile);
+    this.profileService.getProfileRepos().subscribe(repos =>  this.repos = repos);
   }
 
 }
