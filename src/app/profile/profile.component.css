@@ -8,12 +8,9 @@
 }
 
 h1{
-    font-size: 70px;
-    font-weight:bolder;
-    color:black; 
+    font-size: 80px;
+    font-weight:bold;
     text-align:center;
-    text-decoration: underline;
-    font-family: ' Sung', cursive;
     padding:70px;
     text-shadow: 4px 4px white; 
 }
