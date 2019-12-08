@@ -6,7 +6,7 @@
     <form action="" class="enter">
         <div class="form-group">
             <input type="text" placeholder="enter username here...." class="form-control"  [(ngModel)]="username" name="username" (keyup)="findProfile()">
-        
+             <button (click)="getProfileInfo()">SEARCH</button>
         </div>
     </form>
     <div *ngIf="profile">
@@ -49,4 +49,3 @@
                 </div>
             </div>
     </div>
-    
