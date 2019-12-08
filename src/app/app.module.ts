@@ -7,10 +7,12 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProfileService } from './profile.service'
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule }from '@angular/forms';
+import { DateCountPipe } from './date-count.pipe';
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent
+    ProfileComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
