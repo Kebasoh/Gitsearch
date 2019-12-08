@@ -18,10 +18,7 @@ constructor(private profileService:ProfileService){
     this.profile = profile;
   });
 
-  this.profileService.getProfileRepos().subscribe(repos => {
-    console.log(repos);
-    this.repos = repos;
-  });
+ 
 }
  
 findProfile(){
@@ -31,10 +28,6 @@ findProfile(){
     this.profile = profile;
   });
 
-  this.profileService.getProfileInfo().subscribe(repos => {
-    console.log(repos);
-    this.repos = repos;
-  })
 }
   ngOnInit() {
     
